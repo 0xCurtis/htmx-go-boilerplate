@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go and HTMX Example</title>
+    <script src="https://unpkg.com/htmx.org@1.9.3"></script>
+</head>
+<body>
+    <h1>Welcome to Go and HTMX Example</h1>
+
+    <form hx-post="/greet" hx-target="#greeting" hx-swap="innerHTML">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Greet</button>
+    </form>
+
+    <div id="greeting"></div>
+
+    <a href="/listUser">List Users</a>
+
+</body>
+</html>

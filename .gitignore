@@ -1,0 +1,56 @@
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go vendor directory (if using vendoring)
+vendor/
+
+# Binaries
+bin/
+
+# Build directory
+build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database files
+*.db
+
+# IDE/editor specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node modules (if using npm/yarn for front-end dependencies)
+node_modules/
+
+# Environment variables
+.env
+
+# Static content (if dynamically generated)
+static/
+
+# Coverage files
+coverage.out
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# macOS files
+.DS_Store
+
+# Linux files
+*~

@@ -11,9 +11,11 @@ var db *gorm.DB
 
 // User struct represents a user in the system
 type User struct {
+	ID    uint `gorm:"primaryKey"`
 	gorm.Model
-	Name  string
+	Name  string `gorm:"not null"`
 	Email string `gorm:"unique"`
+	Role  string `gorm:"default:user"`
 }
 
 // InitDB initializes the database connection and migrates the schema
